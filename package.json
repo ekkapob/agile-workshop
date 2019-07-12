@@ -1,0 +1,35 @@
+{
+  "name": "ascend-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "dependencies": {
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.3.0",
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8000 & watchify --debug src/main.js -o bundle.js -v",
+    "test": "jest --coverage src"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  },
+  "author": "",
+  "license": "ISC"
+}
