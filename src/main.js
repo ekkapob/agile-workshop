@@ -35,7 +35,7 @@ function showInputError() {
 }
 
 $(function(){
-  $('input').keyup(function(e) { 
+  $('input').keyup(function(e) {
     if (e.keyCode == 13) {
       console.log(',,,,')
       execute();

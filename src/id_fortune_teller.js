@@ -6,7 +6,7 @@ export function luckyNumberFromID(id) {
 
   let sumOfThreeDigits = getIntFromString(id, 0) +
     getIntFromString(id, 1) +
-    getIntFromString(id, 2); 
+    getIntFromString(id, 2);
   sumOfThreeDigits = String(sumOfThreeDigits);
   return getIntFromString(sumOfThreeDigits, 0) + getIntFromString(sumOfThreeDigits, 1);
 }
