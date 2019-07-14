@@ -8,7 +8,8 @@ export function luckyNumberFromID(id) {
     getIntFromString(id, 1) +
     getIntFromString(id, 2);
   sumOfThreeDigits = String(sumOfThreeDigits);
-  return getIntFromString(sumOfThreeDigits, 0) + getIntFromString(sumOfThreeDigits, 1);
+  return getIntFromString(sumOfThreeDigits, 0)
+    + getIntFromString(sumOfThreeDigits, 1);
 }
 
 function getIntFromString(value, index) {
